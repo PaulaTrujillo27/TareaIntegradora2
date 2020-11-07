@@ -37,12 +37,14 @@ public class Public extends Playlist{
 	 */
 	 public double calificationAverage(){
        double average=0;
+	   int count=0;
        for(int i=0; i<CALIFICATION; i++){
            if(calification[i] != 0.0){
                average+=calification[i];
+			   count++;
            }
        }
-       return average/CALIFICATION;
+       return average/count;
      }
 
 	/**

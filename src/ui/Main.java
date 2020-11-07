@@ -80,7 +80,7 @@ public class Main{
 				"(3) to create one playlist\n"+
 				"(4) to add song to playlist\n" + 
 				"(5) to show users\n" +  
-				"(6) to show song\n" +  
+				"(6) to show all songs (pool)\n" +  
 				"(7) to calificate if the playlist is public\n" +  
 				"(8) to show playlist\n" +
 				"(0) to get out"
