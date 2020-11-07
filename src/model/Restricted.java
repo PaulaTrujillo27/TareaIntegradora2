@@ -7,7 +7,7 @@ public class Restricted extends Playlist{
 	 * constructor method <br>
 	 * <b> pre: we need the atributes: name, restricted </b> 
 	 * @param name= playlist name
-	 * @param restricted
+	 * @param restricted= array restricted
 	 */
 	public Restricted(String name, String[] restricted){
 		super(name);

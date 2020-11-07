@@ -2,7 +2,7 @@ package model;
 public class MCS{
 
 	
-	public final static int MAX_SONGS = 50;
+	public final static int MAX_SONGS = 30;
 	public final static int MAX_PLAYLIST = 20;
 	public final static int MAX_USER = 10;
 
@@ -27,7 +27,7 @@ public class MCS{
 	/**
 	 * find the song we write <br>
 	 * <b> pre: we need the songs to have already been created </b> 
-	 * @param title song title
+	 * @param tittle= song tittle
 	 * @return the song the user is looking for
 	 */
 	public Song findSong(String tittle){
@@ -132,6 +132,7 @@ public class MCS{
 		}
 		return message;
 	}
+	
 	/**
 	 * add a new public playlist <br>
 	 * <b> pre: we need the name of the playlist </b> 
@@ -237,27 +238,28 @@ public class MCS{
 	
 	/**
 	 * add a new song <br>
-	 * <b> pre: we need the information of the song (name, artist, duration, release date and genre)  </b> 
-	 * @param duration duration of the song
-	 * @param tittle tittle of the song
-	 * @param artist artist song
-	 * @param songGenre genre of the song
-	 * @param date date of the song 
+	 * <b> pre: we need the information of the song (nickname, duration, tittle, artist, songGente and date)  </b> 
+	 *@param nickname= user name
+	 * @param duration= duration of the song
+	 * @param tittle= tittle of the song
+	 * @param artist= artist song
+	 * @param songGenre= genre of the song
+	 * @param date= date of the song 
 	 * @return a messag, if the song could be created or could not be created
 	 */
-	public String addSong (String nickname,int duration, String title,  String artist, String songGenre, String date ){
+	public String addSong (String nickname,int duration, String tittle,  String artist, String songGenre, String date ){
 		User objuser=findUser(nickname);
 		//objuser.addcategorynum();
 		//objuser.updateCategory();
 		String message="";
 		boolean addSo=false;
-		Song objSearch=findSong(title);
+		Song objSearch=findSong(tittle);
 		if(objSearch!=null)
 			message="Error. the song already exist";
 		else{
 			for (int i=0;i<MAX_SONGS && !addSo;i++){
 				if (song[i]==null){
-					song[i]=new Song (duration, title,  artist, songGenre, date);
+					song[i]=new Song (duration, tittle,  artist, songGenre, date);
 					addSo=true;
 					message="The song has been created";
 				}

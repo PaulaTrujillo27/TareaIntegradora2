@@ -68,7 +68,6 @@ public class Main{
 	/**
 	 * prints on screen the options to use the application <br>
 	 * <b> pre: we need the user to choose what action to perform </b> 
-	 * @param option menu option
 	 * @return the number chosen by the user
 	 */
 	public int showMenu() {

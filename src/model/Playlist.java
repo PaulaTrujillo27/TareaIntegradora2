@@ -12,7 +12,7 @@ public abstract class Playlist {
 	/**
 	 * constructor method <br>
 	 * <b> pre: we need the atributes </b> 
-	 * @param name playlist name
+	 * @param name= playlist name
 	 */
 	public Playlist(String name) {
 	this.name = name;
@@ -24,8 +24,7 @@ public abstract class Playlist {
 	/**
 	 * get method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param name playlist name
-	 * @return playlist name
+	 * @return name= playlist name
 	 */
 	public String getName() {
 	return name;

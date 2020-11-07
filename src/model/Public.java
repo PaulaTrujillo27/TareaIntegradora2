@@ -18,7 +18,7 @@ public class Public extends Playlist{
 	/**
 	 * set method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param calification: PUBLIC playlist calification
+	 * @param acalification: PUBLIC playlist calification
 	 */
 	public void setCalification(double acalification){
         boolean out=false;

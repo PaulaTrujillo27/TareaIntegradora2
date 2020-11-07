@@ -18,7 +18,6 @@ public class Song{
 	 * @param songGenre song genre
 	 * @param date song date
 	 */
-	
 	public Song(int duration, String tittle,  String artist, String songGenre, String date) {
 		this.duration = duration;
 		this.tittle = tittle;
@@ -31,8 +30,7 @@ public class Song{
 	/**
 	 * get method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param duration= song duration
-	 * @return playlist duration
+	 * @return duration= playlist duration
 	 */
 		public int getDuration(){
 		return duration;
@@ -41,8 +39,7 @@ public class Song{
 	/**
 	 * get method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param tittle= song tittle
-	 * @return tittle
+	 * @return tittle= song tittle
 	 */
 		public String getTittle() {
 		return tittle;
@@ -52,8 +49,7 @@ public class Song{
 	/**
 	 * get method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param artist= artist name
-	 * @return artist
+	 * @return artist= artist name
 	 */
 		public String getArtist() {
 		return artist;
@@ -63,8 +59,7 @@ public class Song{
 	/**
 	 * get method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param songGenre= song genre 
-	 * @return sonGenre
+	 * @return songGenre: song genre
 	 */
 		public Genre getGenre() {
 		return songGenre;
@@ -74,8 +69,7 @@ public class Song{
 	/**
 	 * get method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param date: creation song date
-	 * @return date
+	 * @return date: creation date song
 	 */
 		public String getDate() {
 		return date;

@@ -13,9 +13,9 @@ public class User {
 	/**
 	 * constructor method <br>
 	 * <b> pre: we need the atributes </b> 
-	 * @param duration song duration
-	 * @param nickname= user name
-	 * @param password= user password
+	 * @param nickname: user name
+	 *@param age: user age 
+	 * @param password: user password
 	 */
 	public User(String nickname, int age, String password) {
 		this.nickname = nickname;
@@ -29,8 +29,7 @@ public class User {
 	/**
 	 * get method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param nickname= user name
-	 * @return nickname
+	 * @return nickname: user name
 	 */
 	public String getNickname() {
 	return nickname;
@@ -39,8 +38,7 @@ public class User {
 	/**
 	 * get method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param age= user age
-	 * @return age
+	 * @return age:  user age 
 	 */
 	public int getAge() {
 	return age;
@@ -49,8 +47,7 @@ public class User {
 	/**
 	 * get method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param password= user password
-	 * @return password
+	 * @return password: user password
 	 */
 	public String getPassword() {
 	return password;
@@ -59,8 +56,7 @@ public class User {
 	/**
 	 * get method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param categoryType= user category
-	 * @return categoryType
+	 * @return categoryType: user category
 	 */
 	public Category getCategoryType() {
 	return categoryType;
@@ -69,8 +65,7 @@ public class User {
 	/**
 	 * get method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param categorynum= user count
-	 * @return playlist duration
+	 * @return categorynum: user count
 	 */
 	public int getCategorynum() {
 	return categorynum;
@@ -115,7 +110,7 @@ public class User {
 	/**
 	 * set method <br>
 	 * <b> pre: constructor method </b> 
-	 * @param cayegoryType: user category
+	 * @param categoryType: user category
 	 */
 	public void setCategoryType(Category categoryType) {
 		this.categoryType = categoryType;
@@ -124,8 +119,8 @@ public class User {
 	/**
 	* convert Category(enum) to String  <br>
 	*<b> pre: For convert Category (enum) to string, is necessary the Category class(enum)</b>
-	 * @param categoryType: user category </b> 
-	 * @return 
+	 * @param categoryType: user category 
+	 * @return  myUserType: User category
 	 */
 	public Category convert(String categoryType){
         Category myUserType = Category.valueOf(categoryType);
