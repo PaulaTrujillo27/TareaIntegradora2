@@ -15,7 +15,11 @@ public class Public extends Playlist{
 		this.calification=calification;
 	}
 	
-	
+	/**
+	 * set method <br>
+	 * <b> pre: constructor method </b> 
+	 * @param calification: PUBLIC playlist calification
+	 */
 	public void setCalification(double acalification){
         boolean out=false;
         for(int i=0; i<CALIFICATION && out!=true; i++){
@@ -26,7 +30,11 @@ public class Public extends Playlist{
         }
     }
 
-
+	/**
+	 * calculates the average calification of the PUBLIC playlist<br>
+	 * <b> pre: we need all the califications from 1 to 5 of the PUBLIC playlist </b> 
+	 * @return average
+	 */
 	 public double calificationAverage(){
        double average=0;
        for(int i=0; i<CALIFICATION; i++){
@@ -50,6 +58,11 @@ public class Public extends Playlist{
 		return message;
 	}
 
+	/**
+	 * displays PUBLIC playlist information on screen<br>
+	 * <b> pre: we need all the PUBLIC playlist information: title, during, genre and calification </b> 
+	 * @return a message showing all the information of the playlist
+	 */
 	@Override
 	public String toString(){
 	
