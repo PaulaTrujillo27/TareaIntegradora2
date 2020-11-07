@@ -133,6 +133,11 @@ public class Song{
 		}
 		
 
+	/**
+	 * displays Song information on screen<br>
+	 * <b> pre: we need all the Song information: title, artist, duration and songGenre </b> 
+	 * @return a message showing all the information of Song
+	 */
 		public String toString(){
 			String message ="";
 

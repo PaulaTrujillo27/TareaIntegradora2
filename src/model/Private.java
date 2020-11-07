@@ -37,6 +37,11 @@ public class Private extends Playlist{
 	}
 	
 	
+	/**
+	 * displays PRIVATE playlist information on screen<br>
+	 * <b> pre: we need all the PRIVATE playlist information: title, during, ang genre </b> 
+	 * @return a message showing all the information of the playlist
+	 */
 	@Override
 	public String toString(){
 	

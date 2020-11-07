@@ -167,7 +167,7 @@ public class Main{
 	}
 	
 	
-	//song information
+	//Song information
 
 	/**
 	 * asks the user for the information of the song to be registered <br>
@@ -200,7 +200,7 @@ public class Main{
 		
 	}
 	
-	//playlist information
+	//Playlist information
 
 	/**
 	 * asks the user for the information of the user to be registered <br>

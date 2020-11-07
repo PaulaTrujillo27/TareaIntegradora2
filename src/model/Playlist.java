@@ -1,12 +1,10 @@
 package model;
 public abstract class Playlist {
 
-
-	//Atributes
 	
 	private String name;
 
-	//Relationships
+	
 	private Song[] songplay;
 	private Genre[] genreplay;
 	
@@ -22,7 +20,6 @@ public abstract class Playlist {
 	this.genreplay = new Genre[7];
 	}
 	
-	//getters 
 
 	/**
 	 * get method <br>
@@ -34,7 +31,7 @@ public abstract class Playlist {
 	return name;
 	}
 
-	//and setters
+	
 
 	/**
 	 * set constructor <br>
@@ -74,9 +71,15 @@ public abstract class Playlist {
 		return message;
 	}
 
+
+	/**
+	 * add the durations of the songs and converts them into minutes and seconds<br>
+	 * <b> pre: the user has entered the duration of the songs in seconds </b> 
+	 * @return a message in which it shows the minutes and seconds that each song lasts
+	 */
 	public String sumDuration(){
 		int sum=0;
-		int num=0,hor=0,min=0,seg=0;
+		int num=0,min=0,seg=0;
         String message="";
 		for (int i=0;i<songplay.length;i++){
 			if (songplay[i] !=null)
@@ -90,6 +93,11 @@ public abstract class Playlist {
    		return message;
 	}
 
+	/**
+	 * add the genres of each of the songs to the playlist<br>
+	 * <b> pre: the user has entered each of the genres of the songs </b> 
+	 * @return a message in which the genres of the songs entered in that playlist are in the playlist
+	 */
 	public String totalGenre(){
 		String message="";
 		for (int i=0;i<songplay.length;i++){
@@ -102,6 +110,12 @@ public abstract class Playlist {
 		return message;
 	}
 
+	/**
+	 * displays playlist information on screen<br>
+	 * <b> pre: we need all the PUBLIC playlist information: title, during, and genre </b> 
+	 * @return a message showing all the information of the playlist
+	 */
+	@Override
 	public String toString(){
 	
 	String message=

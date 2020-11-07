@@ -36,6 +36,12 @@ public class Restricted extends Playlist{
 		return message;
 	}
 	
+	
+	/**
+	 * displays RESTRICTED playlist information on screen<br>
+	 * <b> pre: we need all the RECTRICTED playlist information: title, during, and genre </b> 
+	 * @return a message showing all the information of the playlist
+	 */
 	@Override
 	public String toString(){
 	

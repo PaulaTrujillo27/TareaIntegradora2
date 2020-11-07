@@ -18,8 +18,7 @@ public class MCS{
 		playlist = new Playlist [MAX_PLAYLIST];
 	}
 	
-	//________________________________________
-	//adds methods
+	
 
 	/**
 	 * find the song we write <br>
@@ -59,6 +58,11 @@ public class MCS{
 
 
 
+	/**
+	 * update the category in wich each user is located<br>
+	 * <b> pre: a user created with your number of songs entered </b> 
+	 * @param nickname= user name
+	 */
 	public void updateRank(String nickname){  
 	    User objSearch = findUser(nickname); 
 	    objSearch.setCategorynum(objSearch.getCategorynum()+1);
@@ -150,7 +154,13 @@ public class MCS{
 		}
 		return message;
 	}
-
+	
+	/**
+	 * saves the calification entered by each user from the PUBLIC playlist<br>
+	 * <b> pre: the user or the users have entered the calification of the PUBLIC playlist </b> 
+	 * @param calification= PUBLIC playlist calification
+	 * @param name= playlist name
+	 */
 	public void calificationPublicPlaylist(double calification, String name){
     Playlist objecPlaylist = findPlaylist(name);
     if(objecPlaylist!=null){
@@ -164,7 +174,6 @@ public class MCS{
 	
 	
 	
-	//___________________________________________________
 	/**
 	 * add a new private playlist <br>
 	 * <b> pre: we need the user nickname and the name of the playlist  </b> 
@@ -192,7 +201,8 @@ public class MCS{
 		}
 		return message;
 	}
-	//____________________________________________________
+	
+	
 	/**
 	 * add a new restricted playlist <br>
 	 * <b> pre: we need the playlist name and the name of up to 5 people  </b> 
@@ -220,8 +230,7 @@ public class MCS{
 		return message;
 	}
 
-	//_________________________________________________________________________________________________
-
+	
 	/**
 	 * add a new song <br>
 	 * <b> pre: we need the information of the song (name, artist, duration, release date and genre)  </b> 
@@ -254,6 +263,8 @@ public class MCS{
 		}
 		return message;
 	}
+	
+	
 	/**
 	 * add a song already created to a playlist already created<br>
 	 * <b> pre: we need the name of the song already created, the username alredy created and the name of the playlist alredy created </b> 
@@ -292,9 +303,11 @@ public class MCS{
 	}
 	
    
-
-	
-
+	/**
+	 * print the information if the user has been well created<br>
+	 * <b> pre: have entered the user data correctly </b> 
+	 * @return a message that say, if the user was created correctly or not
+	 */
 	public String showUsers(){
 		String message="";
 		for (int i=0;i<MAX_USER;i++){
@@ -305,6 +318,12 @@ public class MCS{
 		return message;
 	}
 
+
+	/**
+	 * print the information if the song has been well created<br>
+	 * <b> pre: have entered the song data correctly </b> 
+	 * @return a message that say, if the song was created correctly or not
+	 */
 	public String showSongs(){
 			String message="";
 		for (int i=0;i<MAX_SONGS;i++){
@@ -316,6 +335,11 @@ public class MCS{
 	}
 
 
+	/**
+	 * print the information if the playlist has been well created<br>
+	 * <b> pre: have entered the playlist data correctly </b> 
+	 * @return a message that say, if the playlist was created correctly or not
+	 */
 	public String showPlaylist(){
 			String message="";
 		for (int i=0;i<MAX_PLAYLIST;i++){
