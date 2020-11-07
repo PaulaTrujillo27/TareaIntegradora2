@@ -1,14 +1,21 @@
 package model;
 public class Public extends Playlist{
 	public static final int CALIFICATION =5;
-	//Atributes
 	
 	private double[] calification= new double[CALIFICATION];
 
+
+	/**
+	 * constructor method <br>
+	 * <b> pre: we need the atribute: name </b> 
+	 * @param name= playlist name
+	 */
 	public Public(String name){
 		super(name);
 		this.calification=calification;
 	}
+	
+	
 	public void setCalification(double acalification){
         boolean out=false;
         for(int i=0; i<CALIFICATION && out!=true; i++){
@@ -37,7 +44,6 @@ public class Public extends Playlist{
 	 * @param objuser user information
 	 * @return a message that say, if the song add to playlist correctly
 	 */
-	@Override
 	public String addSongtoplaylist(Song objsong, User objuser){
 		String message = "";
 		message = message = super.addSongtoplaylist(objsong, objuser);

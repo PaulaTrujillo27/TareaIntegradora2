@@ -7,9 +7,9 @@ public class Private extends Playlist{
 
 	/**
 	 * constructor method <br>
-	 * <b> pre: we need the atributes </b> 
-	 * @param name playlist name
-	 * @param propietary user propietary
+	 * <b> pre: we need the atributes: name, propietary </b> 
+	 * @param name= playlist name
+	 * @param propietary= user propietary
 	 */
 	public Private(String name, User propietary){
 		super(name);
@@ -35,6 +35,8 @@ public class Private extends Playlist{
 
 		return message;
 	}
+	
+	
 	@Override
 	public String toString(){
 	

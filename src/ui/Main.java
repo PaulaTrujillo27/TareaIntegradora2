@@ -172,10 +172,10 @@ public class Main{
 	/**
 	 * asks the user for the information of the song to be registered <br>
 	 * <b> pre: we need the value of the option variable </b> 
-	 * @param name song name
-	 * @param artist song artist
-	 * @param songGenre	song gnre 
-	 * @param date song date
+	 * @param name =song name
+	 * @param artist =song artist
+	 * @param songGenre=song genre 
+	 * @param date= song date
 	 */
 	private void createSong(){
 		String nickname,name, artist, songGenre, date;
@@ -247,16 +247,14 @@ public class Main{
 		default:
 			System.out.println("Error, invalid option");
 		}
-	}//End
-	//____________________________________________________________________________________
-
+	}
 
 	/**
 	 * ask for the song information and add it to a playlist <br>
 	 * <b> pre: we need the value of the option variable </b> 
-	 * @param name playlist name
-	 * @param nickname user nickname(private and restricted)
-	 * @param song song name
+	 * @param name= playlist name
+	 * @param nickname= user nickname(private and restricted)
+	 * @param song= song name
 	 * @param message right or wrong message
 	 */
 	private void addSongtoplaylist(){

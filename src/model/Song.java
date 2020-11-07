@@ -1,12 +1,12 @@
 package model;
 public class Song{
 
-	//Atributes
+
 	private int duration;
 	private String tittle;
 	private String artist;
 	private String date;
-	//Relationship
+	
 	private Genre songGenre;
 	
 	/**
@@ -26,46 +26,101 @@ public class Song{
 		this.songGenre = Genre.valueOf(songGenre);
 		this.date = date;
 	}
-	//getters 
+	
+	
+	/**
+	 * get method <br>
+	 * <b> pre: constructor method </b> 
+	 * @param duration= song duration
+	 * @return playlist duration
+	 */
 		public int getDuration(){
 		return duration;
 		}
+		
+	/**
+	 * get method <br>
+	 * <b> pre: constructor method </b> 
+	 * @param tittle= song tittle
+	 * @return tittle
+	 */
 		public String getTittle() {
 		return tittle;
 		}
+		
+		
+	/**
+	 * get method <br>
+	 * <b> pre: constructor method </b> 
+	 * @param artist= artist name
+	 * @return artist
+	 */
 		public String getArtist() {
 		return artist;
 		}
+		
+		
+	/**
+	 * get method <br>
+	 * <b> pre: constructor method </b> 
+	 * @param songGenre= song genre 
+	 * @return sonGenre
+	 */
 		public Genre getGenre() {
 		return songGenre;
 		}
+		
+		
+	/**
+	 * get method <br>
+	 * <b> pre: constructor method </b> 
+	 * @param date: creation song date
+	 * @return date
+	 */
 		public String getDate() {
 		return date;
 		}
 
-	//Setters 
-		public void setDuration(int duration){
+	/**
+	 * set method <br>
+	 * <b> pre: constructor method </b> 
+	 * @param duration: duration song
+	 */		public void setDuration(int duration){
 			this.duration = duration;
 		}
+	/**
+	 * set method <br>
+	 * <b> pre: constructor method </b> 
+	 * @param tittle: song tittle
+	 */
 		public void setTittle(String tittle) {
 			this.tittle = tittle;
 		}
+		
+	/**
+	 * set method <br>
+	 * <b> pre: constructor method </b> 
+	 * @param artist: artist name
+	 */
 		public void setArtist(String artist) {
 			this.artist = artist;
 		}
-		//public void setSongGenre(Genre songGenre) {
-		//	this.songGenre = songGenre;
-		//}
+		
+		
+	/**
+	 * set method <br>
+	 * <b> pre: constructor method </b> 
+	 * @param date: creation song date
+	 */
 		public void setDate(String date) {
 			this.date = date;
 		}
 
-		/**
-		* convert time from just seconds to minutes, and seconds <br>
-	 	* <b> pre: we need the time in seconds </b> 
-	 	* @return convert time
-	 	*/
-
+	/**
+	* convert time from just seconds to minutes, and seconds <br>
+	 * <b> pre: we need the time in seconds </b> 
+	 * @return convert time
+	 */
 		public String duration(){
 		int num=0,min=0,seg=0;
         String message="";
@@ -75,8 +130,8 @@ public class Song{
 
     	message=(": "+min+"m "+seg+"s\n");
    		return message;
-
 		}
+		
 
 		public String toString(){
 			String message ="";

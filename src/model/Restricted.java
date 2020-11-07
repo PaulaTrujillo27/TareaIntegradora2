@@ -1,20 +1,26 @@
 package model;
 public class Restricted extends Playlist{
-	//Atributes 
+	
 	private String[] restricted;
+	
+	/**
+	 * constructor method <br>
+	 * <b> pre: we need the atributes: name, restricted </b> 
+	 * @param name= playlist name
+	 * @param restricted
+	 */
 	public Restricted(String name, String[] restricted){
 		super(name);
 		this.restricted = restricted;
 	}
 
-/**
+	/**
 	 * add any song if it is already created, because it is Restricted<br>
 	 * <b> pre: we need the information of the song already created and that it has gone through the "addsongtoplaylist" methods in the main and in the MCS </b> 
 	 * @param objsong song information
 	 * @param objuser user information
 	 * @return a message that say, if the song add to playlist correctly
 	 */
-	@Override
 	public String addSongtoplaylist(Song objsong, User objuser){
 		String message = "";
 		boolean addSong = false;
@@ -29,6 +35,7 @@ public class Restricted extends Playlist{
 
 		return message;
 	}
+	
 	@Override
 	public String toString(){
 	
