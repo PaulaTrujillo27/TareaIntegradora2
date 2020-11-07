@@ -1,17 +1,21 @@
 package model;
 public class MCS{
 
-	//Constants
+	
 	public final static int MAX_SONGS = 50;
 	public final static int MAX_PLAYLIST = 20;
 	public final static int MAX_USER = 10;
 
-	//Relationship
+	
 	private Playlist[] playlist;
 	private User[] user;
 	private Song[] song;
 
 
+	/**
+	 * constructor method <br>
+	 * <b> pre: we need the constants and relationships </b> 
+	 */
 	public MCS(){
 		song = new Song [MAX_SONGS];
 		user = new User [MAX_USER];
